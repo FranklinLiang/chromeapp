@@ -1,0 +1,15 @@
+{
+ "manifest_version": 2,
+ "name": "Custom New Tab",
+ "description": "Multifunctional new tab page.",
+ "version": "1",
+ "author": "Franklin Liang",
+"browser_action": {
+   "default_icon": "tab-icon.png",
+   "default_title": "GLHF"
+ },
+"chrome_url_overrides" : {
+  "newtab": "newtab.html"
+},
+ "permissions": ["activeTab"]
+}
