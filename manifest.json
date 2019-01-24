@@ -6,7 +6,7 @@
  "author": "Franklin Liang",
 "browser_action": {
    "default_icon": "tab-icon.png",
-   "default_title": "GLHF"
+   "default_title": "Custom Extension"
  },
 "chrome_url_overrides" : {
   "newtab": "newtab.html"
