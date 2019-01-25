@@ -2,7 +2,7 @@
  "manifest_version": 2,
  "name": "Custom New Tab",
  "description": "Multifunctional new tab page.",
- "version": "1",
+ "version": "1.0",
  "author": "Franklin Liang",
 "browser_action": {
    "default_icon": "tab-icon.png",
@@ -11,5 +11,9 @@
 "chrome_url_overrides" : {
   "newtab": "newtab.html"
 },
- "permissions": ["activeTab"]
+ "permissions": [
+   "activeTab",
+   "unlimitedStorage",
+   "https://www.alphavantage.co/*"
+ ]
 }
