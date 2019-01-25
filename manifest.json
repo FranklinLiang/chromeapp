@@ -11,9 +11,18 @@
 "chrome_url_overrides" : {
   "newtab": "newtab.html"
 },
+
  "permissions": [
    "activeTab",
    "unlimitedStorage",
    "https://www.alphavantage.co/*"
- ]
+ ],
+
+ "content_scripts": [{
+    "matches": ["http://*/*"],
+    "js": [
+           "jquery.js",
+           "alphavantage.js"
+         ]
+  }]
 }
