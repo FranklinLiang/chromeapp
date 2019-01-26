@@ -15,7 +15,7 @@
  "permissions": [
    "activeTab",
    "unlimitedStorage",
-   "https://www.alphavantage.co/*"
+   "http://*/*"
  ],
 
  "content_scripts": [{
