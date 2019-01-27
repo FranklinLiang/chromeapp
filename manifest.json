@@ -23,6 +23,7 @@
     "js": [
            "jquery.js",
            "alphavantage.js"
+           "sweetalert2@8.js"
          ]
   }]
 }

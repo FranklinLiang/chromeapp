@@ -56,9 +56,18 @@ function update(){
           $("#stockIndicator").hide();
 
           oldTicker = ticker;
-          
+
         }else{
-          alert("Invalid symbol");
+          Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+          }).fire({
+            type: 'error',
+            title: 'Invalid symbol!'
+          });
+
           $("#stockIndicator").hide();
 
           ticker = oldTicker;

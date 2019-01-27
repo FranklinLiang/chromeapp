@@ -33,6 +33,10 @@
       <span class="stock_label">Change</span><br/>
       <strong class="stock_strong"><span id="stockChange"></span></strong><br />
       <strong class="stock_strong"><span id="stockChangePercent"></span></strong><br />
+      <div id="ticker_setter">
+        <input id="ticker_input" placeholder="Stock Symbol"></input>
+        <button id="ticker_button">Set Symbol</button>
+      </div>
     </div>
     <div style="clear: both;"></div>
 
@@ -56,13 +60,11 @@
 
   </div>
 
-  <div id="ticker_setter">
-    <input id="ticker_input" placeholder="Stock Symbol"></input>
-    <button id="ticker_button">Set Symbol</button>
-  </div>
+
 
 </div>
 
+<script src="sweetalert2@8.js"></script>
 <script src="datetime.js"></script>
 <script src="alphavantage.js"></script>
 
