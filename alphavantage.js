@@ -77,3 +77,11 @@ function update(){
     });
   }
 }
+
+var input = document.getElementById("ticker_input");
+input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("ticker_button").click();
+  }
+});
