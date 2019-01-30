@@ -4,11 +4,43 @@ function updateClock() {
                   'July', 'August', 'September', 'October', 'November', 'December'];
         if (now.getMinutes() < 10)
           {
-            time = now.getHours() + ':' + '0' + now.getMinutes();
+            if (now.getHours() < 12)
+              {
+                time = now.getHours() + ':' + '0' + now.getMinutes() + ' AM';
+              }
+            if (now.getHours() == 12)
+              {
+                time = now.getHours() + ':' + '0' + now.getMinutes() + ' PM';
+              }
+            if (now.getHours() == 24)
+              {
+                time = now.getHours() + ':' + '0' + now.getMinutes() + ' PM';
+              }
+            else
+              {
+                time = (now.getHours() - 12) + ':' + '0' + now.getMinutes() + ' PM';
+              }
           }
         else
           {
-            time = now.getHours() + ':' + now.getMinutes();
+            {
+              if (now.getHours() < 12)
+                {
+                  time = now.getHours() + ':' + now.getMinutes() + ' AM';
+                }
+              if (now.getHours() == 12)
+                {
+                  time = now.getHours() + ':' + now.getMinutes() + ' PM';
+                }
+              if (now.getHours() == 24)
+                {
+                  time = now.getHours() + ':' + now.getMinutes() + ' PM';
+                }
+              else
+                {
+                  time = (now.getHours() - 12) + ':' + now.getMinutes() + ' PM';
+                }
+            }
           }
 
         date = [now.getDate(),
