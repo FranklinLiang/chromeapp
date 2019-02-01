@@ -22,7 +22,7 @@
     "matches": ["http://*/*"],
     "js": [
            "jquery.js",
-           "alphavantage.js"
+           "alphavantage.js",
            "sweetalert2@8.js"
          ]
   }]

@@ -8,11 +8,11 @@ function updateClock() {
               {
                 time = now.getHours() + ':' + '0' + now.getMinutes() + ' AM';
               }
-            if (now.getHours() == 12)
+            else if (now.getHours() == 12)
               {
                 time = now.getHours() + ':' + '0' + now.getMinutes() + ' PM';
               }
-            if (now.getHours() == 24)
+            else if (now.getHours() == 24)
               {
                 time = now.getHours() + ':' + '0' + now.getMinutes() + ' PM';
               }
@@ -28,11 +28,11 @@ function updateClock() {
                 {
                   time = now.getHours() + ':' + now.getMinutes() + ' AM';
                 }
-              if (now.getHours() == 12)
+              else if (now.getHours() == 12)
                 {
                   time = now.getHours() + ':' + now.getMinutes() + ' PM';
                 }
-              if (now.getHours() == 24)
+              else if (now.getHours() == 24)
                 {
                   time = now.getHours() + ':' + now.getMinutes() + ' PM';
                 }
